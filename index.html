@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Antonio Natale</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#top">Profilo</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+
+    <header class="prova">
+      <div class="foto-profilo">
+        <div class="cerchio">
+          <img src="pro-pic.jpg">
+        </div>
+        <div class="">
+          <h1><em>Antonio Natale</em></h1>
+            <span id="typed"></span>
+        </div>
+      </div>
+
+      <div class="bio" id="bio">
+        <div class="about-me">
+          <h1><em>Bio:</em></h1>
+          <p>Sono uno studente di Informatica alla <em>Federico II</em> di Napoli,
+            nonché studente di <em>Start2Impact</em>. Mi appassiona tutto quello che riguarda
+            il mondo tech e digitale. Sono un tipo molto competitivo e non amo
+            le sconfitte, sono anche molto diretto e sincero con le persone usando
+            però anche la giusta dose di tatto. Questa pagina per adesso è un
+            pò scarna di competenze, ma sono già pronto ad apprendere di nuove.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill" id="skill">
+        <h1><em>Skill:</em></h1>
+
+        <div class="so-fare">
+          <label for="good" class="intestazione-ul">Cosa so fare:</label>
+          <ul id="good">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>ES6</li>
+            <li>React</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <div class="imparare">
+          <label for="bad" class="intestazione-ul">Cosa sto studiando:</label>
+          <ul id="bad">
+            <li>Php</li>
+            <li>My Sql</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <h1 class="progetti"><em>Progetti:</em></h1>
+      <!-- Swiper -->
+      <div class="swiper-container" id="lista-progetti">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="progetti-img" src="simple_wheater.png" width="50%"></div>
+          <div class="swiper-slide"><img class="progetti-img2" src="covid_tracker.png" width="50%"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="contatti" id="contatti">
+        <h1>I Miei Contatti</h1>
+        <div class="social">
+          <a href="https://www.facebook.com/antonio.natale.9" target="_blank"><img src="facebook.svg" width="100px"></a>
+
+          <a href="https://www.instagram.com/ilnatalino/" target="_blank"><img src="instagram2.svg" width="100px"></a>
+
+          <a href="mailto:antonionat95@gmail.com"><img src="mail.svg" width="101px"></a>
+        </div>
+      </div>
+
+    </header>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+      const oneElement = document.querySelector('#typed')
+      ityped.init(oneElement, { showCursor: true, strings: ['Web Developer', 'Programmatore', 'Amante dello sport' ] });
+    </script>
+     <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
